@@ -1,0 +1,97 @@
+.block_info {
+    background: #CD278D;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: vw(20) vw(18);
+    &.isHidden {
+        display: none;
+    }
+    @media all and (max-width: 1023px) {
+        padding: 10px 11px;
+        align-items: center;
+    }
+    &__close {
+        width: vw(15);
+        height: vw(15);
+        cursor: pointer;
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='17' viewBox='0 0 17 17' fill='none'%3E%3Cpath d='M16 1C15.6 1.4 6.16667 10.8333 1.5 15.5M16 15.5L1.5 1' stroke='white' stroke-width='2'/%3E%3C/svg%3E") 50% / 100% no-repeat;
+        @media all and (max-width: 1023px) {
+            width: 12px;
+            height: 12px;
+            flex: 0 0 12px;
+            margin-right: 15px;
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: vw(624);
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            max-width: 100%;
+            justify-content: space-between;
+        }
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-size: 0;
+        margin-right: vw(20);
+        @media all and (max-width: 1023px) {
+            margin-right: 6px;
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+        img {
+            margin-right: vw(8);
+            width: vw(88);
+            height: vw(54);
+            object-fit: 100%;
+            object-position: center;
+            flex: 0 0 vw(88);
+            @media all and (max-width: 1023px) {
+                margin-right: 0;
+                margin-left: 15px;
+                height: 43px;
+                margin-right: auto;
+                width: 64px;
+                flex: 0 0 64px;
+            }
+        }
+        span {
+            color: var(--Fill-color---white, #FFF);
+            font-family: "PTSerifProNarrow", sans-serif;
+            font-size: vw(24);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 108%;
+            @media all and (max-width: 1023px) {
+                font-size: 16px;
+            }
+        }
+    }
+    &__btn {
+        color: #310749;
+        font-family: "PTSerifProNarrow", sans-serif;
+        font-size: vw(20);
+        font-style: normal;
+        font-weight: 400;
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        line-height: 130%;
+        padding: vw(7);
+        max-width: vw(124);
+        width: 100%;
+        background: url(../img/icon_btn.png) 50% / 100% no-repeat;
+        @media all and (max-width: 1023px) {
+            font-size: 16px;
+            padding: 7px;
+            flex: 0 0 87px;
+            max-width: 87px;
+        }
+    }
+}

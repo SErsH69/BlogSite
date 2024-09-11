@@ -1,0 +1,91 @@
+.block_red {
+    padding-top: vw(70);
+    padding-bottom: vw(124);
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__in {
+        background: url('../img/bg_red.png') 50% / 100% no-repeat;
+        display: flex;
+        align-items: center;
+        padding: vw(57);
+        min-height: vw(428);
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            padding: 50px 20px;
+            background: url('../img/bg_red_mob.png') 50% / 100% no-repeat;
+        }
+    }
+    &__l-side {
+        flex: 0 0 vw(633);
+        font-size: 0;
+        margin-right: vw(60);
+        @media all and (max-width: 1023px) {
+            flex: unset;
+            margin-bottom: 25px;
+            margin-right: 0;
+            max-width: 280px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__r-side {
+        width: 100%;
+        @media all and (max-width: 1023px) {
+            text-align: center;
+        }
+    }
+    &__text {
+        margin-bottom: vw(43);
+        color: #FFF;
+        font-family: "PTSerifProNarrow", sans-serif;
+        font-size: vw(40);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 106%;
+        @media all and (max-width: 1023px) {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
+    }
+    &__link {
+        font-family: "PTSerifProNarrow", sans-serif;
+        font-weight: 400;
+        font-size: vw(24);
+        line-height: 188%;
+        color: #310749;
+        display: inline-block;
+        text-align: center;
+        padding: vw(7);
+        text-decoration: none;
+        max-width: vw(288);
+        width: 100%;
+        position: relative;
+        background: url('../img/icon_btn2.png') 50% / 100% no-repeat;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+            padding: 19px;
+            max-width: 221px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            background: url(../img/icon_hand2.png) 50% / 100% no-repeat;
+            right: vw(-110);
+            width: vw(100);
+            height: vw(70);
+            top: vw(-40);
+            @media all and (max-width: 1023px) {
+                width: 50px;
+                height: 60px;
+                right: 0;
+                top: -44px;
+                transform: rotate(-20deg);
+            }
+        }
+    }
+}

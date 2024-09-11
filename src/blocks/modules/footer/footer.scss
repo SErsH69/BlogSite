@@ -1,0 +1,149 @@
+.footer {
+    background: #170323;
+    padding-top: vw(72);
+    padding-bottom: vw(57);
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        background: #fff url(../img/icon_foot.svg) 50% 55% no-repeat;
+        width: vw(70);
+        height: vw(70);
+        background-size: vw(60);
+        top: vw(-35);
+        left: 50%;
+        margin-left: vw(-35);
+        border-radius: 50%;
+        @media all and (max-width: 1023px) {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            margin-left: -35px;
+            background-size: 60px;
+        }
+    }
+    @media all and (max-width: 1023px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    &__top {
+        display: flex;
+        margin-bottom: vw(17);
+        @media all and (max-width: 1023px) {
+            margin-bottom: 33px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+    &__links {
+        max-width: vw(260);
+        width: 100%;
+        margin-right: vw(226);
+        @media all and (max-width: 1023px) {
+            margin-right: 0;
+            max-width: 100%;
+            margin-bottom: 19px;
+        }
+        span {
+            display: block;
+            margin-bottom: vw(14);
+            color: var(--Fill-color---white, #FFF);
+            font-family: "PTSerifProNarrow", sans-serif;
+            font-size: vw(20);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 9px;
+                font-size: 20px;
+            }
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        a {
+            font-size: 0;
+            margin-right: vw(11);
+            margin-bottom: vw(10);
+            max-width: vw(120);
+            width: 100%;
+            display: inline-block;
+            @media all and (max-width: 1023px) {
+                max-width: 138px;
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__contacts {
+        span {
+            display: block;
+            margin-bottom: vw(14);
+            color: var(--Fill-color---white, #FFF);
+            font-family: "PTSerifProNarrow", sans-serif;
+            font-size: vw(20);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 9px;
+                font-size: 20px;
+            }
+        }
+    }
+    &__mail {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--Fill-color---white, #FFF);
+        font-family: "Roboto", sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144%;
+        @media all and (max-width: 1023px) {
+            font-size: 18px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media all and (max-width: 1023px) {
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            padding-top: 10px;
+            border-top: 1px solid #53405E;
+        }
+    }
+    &__copy {
+        color: #C1C1C1;
+        font-family: "Roboto", sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144%;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+    }
+    &__politic {
+        color: #C1C1C1;
+        font-family: "Roboto", sans-serif;
+        font-size: vw(18);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144%;
+        text-decoration: none;
+        display: inline-block;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.header {
+    background: #170323;
+    padding-top: vw(15);
+    padding-bottom: vw(15);
+    @media all and (max-width: 1023px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__logo {
+        max-width: vw(197);
+        width: 100%;
+        font-size: 0;
+        @media all and (max-width: 1023px) {
+            max-width: 137px;
+        }
+    }
+}
